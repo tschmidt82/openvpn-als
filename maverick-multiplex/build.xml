@@ -59,7 +59,7 @@
 			
 		<!-- Multiplex must be 1.1 compliant -->
 		
-		<javac debug="${build.debug}" target="1.1" compiler="${build.compiler}" destdir="${build.output}" srcdir="${build.tmp.src}" includeantruntime="false" includes="**/*.java" classpathref="maverick-multiplex.class.path">
+		<javac debug="${build.debug}" target="1.8" compiler="${build.compiler}" destdir="${build.output}" srcdir="${build.tmp.src}" includeantruntime="false" includes="**/*.java" classpathref="maverick-multiplex.class.path">
 			<classpath>
 				<fileset dir="lib">
 					<include name="*.jar"/>

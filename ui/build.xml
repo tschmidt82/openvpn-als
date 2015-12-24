@@ -111,11 +111,11 @@
 		<if>
 			<equals arg1="${ui.java1}" arg2="true"/>
 			<then>
-				<javac target="1.1" source="1.2" srcdir="${build.tmp.java1.src}" destdir="${build.tmp.java1.classes}" includes="**/*.java">
+				<javac target="1.8" source="1.2" srcdir="${build.tmp.java1.src}" destdir="${build.tmp.java1.classes}" includes="**/*.java">
 		       	</javac>
 		     </then>
 		</if>
-		<javac target="1.2" source="1.2" srcdir="${build.tmp.java2.src}" destdir="${build.tmp.java2.classes}" includes="**/*.java">
+		<javac target="1.8" source="1.2" srcdir="${build.tmp.java2.src}" destdir="${build.tmp.java2.classes}" includes="**/*.java">
        	</javac>
 
 	</target>

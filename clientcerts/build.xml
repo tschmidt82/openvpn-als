@@ -85,7 +85,7 @@
 
 	<target name="compile" description="Compile the extension" depends="prepare, compile-dependencies">
 		<echo>Compiling with debug ${build.debug}</echo>
-		<javac srcdir="${dir.src}" destdir="${dir.build.classes}" debug="${build.debug}" source="1.5" target="1.5" includeantruntime="false" includes="**/*.java">
+		<javac srcdir="${dir.src}" destdir="${dir.build.classes}" debug="${build.debug}" source="1.5" target="1.8" includeantruntime="false" includes="**/*.java">
 			<classpath refid="build.classpath"/>
 		</javac>
 		<echo>Copying required properties file</echo>

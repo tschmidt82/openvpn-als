@@ -74,13 +74,13 @@
 				<exclude name="**/CVS/**/*"/>
 			</fileset>
 		</copy>	
-		<javac target="1.1" source="1.2" compiler="${build.compiler}" destdir="${build.output}"
+		<javac target="1.8" source="1.2" compiler="${build.compiler}" destdir="${build.output}"
 				srcdir="${build.src}"
 				includeantruntime="false" includes="**/*.java" classpathref="maverick-ssl.class.path"
 			    debug="true">
 		</javac>
 
-		<javac target="1.5" source="1.5" destdir="${build.output}"
+		<javac target="1.8" source="1.5" destdir="${build.output}"
 				srcdir="${build.src1.5}"
 				includeantruntime="false" includes="**/*.java" classpathref="maverick-ssl.class.path"
 				debug="true">
@@ -125,7 +125,7 @@
 				<pathelement path="${build-tools.home}/codeswitcher/codeswitcher.jar"/>
 			</classpath>
 		</java>
-		<javac target="1.1" source="1.2" compiler="${build.compiler}" destdir="${build.output}"
+		<javac target="1.8" source="1.2" compiler="${build.compiler}" destdir="${build.output}"
 				srcdir="${build.tmp}"
 				includeantruntime="false" includes="**/*.java" classpathref="maverick-ssl.class.path"
 			    debug="true">
@@ -147,7 +147,7 @@
 				<pathelement path="${build-tools.home}/codeswitcher/codeswitcher.jar"/>
 			</classpath>
 		</java>			
-		<javac target="1.5" source="1.5" destdir="${build.output}"
+		<javac target="1.8" source="1.5" destdir="${build.output}"
 				srcdir="${build.tmp}"
 				includeantruntime="false" includes="**/*.java" classpathref="maverick-ssl.class.path"
 				debug="true">
